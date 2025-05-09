@@ -30,6 +30,7 @@ const App = () => {
   ];
 
   const depoimentos = [
+    
     {
       nome: 'Ana Luiza',
       local: 'Ribeirão Preto (SP)',
@@ -66,8 +67,9 @@ const App = () => {
       texto: 'Estudo com brasileiros e paraguaios. Já faço parte do internato e o ensino é muito bom.',
       foto: 'https://i.pravatar.cc/150?img=17'
     }
+
   ];
-  
+    
   return (
     <div className="bg-white text-gray-800">
       {/* Hero com imagem e emoção */}
@@ -76,7 +78,7 @@ const App = () => {
         <p className="text-lg md:text-xl max-w-3xl mx-auto">Entre direto em Medicina no Paraguai, com apoio completo para o Revalida, mensalidade acessível e estrutura moderna.</p>
       </header>
 
-      {/* Imagens motivacionais */}
+     {/* Imagens motivacionais */}
       <section className="py-10 px-6 bg-white">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           <img src="https://images.pexels.com/photos/8460158/pexels-photo-8460158.jpeg" className="rounded-xl shadow" alt="Laboratório real" />
@@ -85,6 +87,20 @@ const App = () => {
         </div>
       </section>
 
+      {/* Bloco emocional: Você nunca estará sozinho */}
+      <section className="py-16 px-6 bg-gray-100 text-center">
+        <h2 className="text-3xl font-bold text-blue-900 mb-4">Você nunca estará sozinho</h2>
+        <p className="text-md text-gray-800 max-w-2xl mx-auto mb-6">
+          Desde a matrícula até o primeiro dia de aula, nossa equipe estará ao seu lado. 
+          Com suporte dedicado, acompanhamento personalizado via WhatsApp e ajuda com documentos, alojamento e até a chegada na universidade.
+        </p>
+        <img 
+          src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg" 
+          alt="Estudantes felizes acolhidos" 
+          className="rounded-xl shadow-lg mx-auto max-w-xl"
+        />
+      </section>
+        
       {/* Benefícios com ícones */}
       <section className="py-16 px-6">
         <h2 className="text-3xl font-bold text-center mb-10 text-blue-900">Por que brasileiros estão migrando para o Paraguai?</h2>
