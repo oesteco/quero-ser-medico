@@ -2,139 +2,107 @@
 import React from 'react';
 
 const App = () => {
-  const beneficios = [
-    {
-      titulo: 'Sem Vestibular',
-      descricao: 'Entrada direta no curso, sem ENEM, sem cursinho e sem concorrência.',
-      icone: '✅'
-    },
-    {
-      titulo: 'Mensalidade Acessível',
-      descricao: 'A partir de R$ 1.500/mês. Até 70% mais barato que faculdades no Brasil.',
-      icone: '💰'
-    },
-    {
-      titulo: 'Internato Incluso',
-      descricao: 'Prática garantida nos últimos anos com supervisão clínica.',
-      icone: '🩺'
-    },
-    {
-      titulo: 'Diploma com Reconhecimento',
-      descricao: 'Faculdade listada no World Directory of Medical Schools.',
-      icone: '🌍'
-    },
-    {
-      titulo: 'Preparação para Revalida',
-      descricao: 'Você estuda focado já para validar seu diploma no Brasil.',
-      icone: '🎯'
-    }
-  ];
-
-  const depoimentos = [
-    {
-      nome: 'Ana Paula Silva',
-      local: 'Estudante de Medicina – 4º ano',
-      texto: 'Depois de tentar medicina por 3 anos no Brasil, vim para o Paraguai e foi a melhor decisão da minha vida. Estou no 4º ano, economizei muito dinheiro e recebo suporte completo para o Revalida. A qualidade do ensino é excelente!',
-      foto: 'https://i.pravatar.cc/150?img=3'
-    },
-    {
-      nome: 'Lucas Nascimento',
-      local: 'Porto Alegre (RS)',
-      texto: 'Gastei mais de R$ 60 mil só em cursinho no Brasil. Hoje estou no 3º ano aqui e já fiz mais clínica do que muitos amigos formados no Brasil.',
-      foto: 'https://i.pravatar.cc/150?img=8'
-    },
-    {
-      nome: 'Carlos Henrique',
-      local: 'Recife (PE)',
-      texto: 'Só de mensalidade no Brasil eu pagaria 8 a 10 mil por mês. Aqui pago menos que um cursinho e estudo de verdade.',
-      foto: 'https://i.pravatar.cc/150?img=5'
-    }
-  ];
-
   return (
-    <div className="min-h-screen bg-white text-gray-800">
-      <header className="text-center py-16 bg-blue-50 px-4">
-        <h1 className="text-5xl font-bold text-blue-900 mb-4">Quero Ser Médico</h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto">
-          Estude Medicina no Paraguai com entrada facilitada, mensalidade acessível e estrutura moderna. Chega de esperar o ENEM!
-        </p>
+    <div className="bg-white text-gray-800 font-sans">
+      {/* A - Atenção */}
+      <header className="bg-blue-50 py-16 text-center px-6">
+        <h1 className="text-5xl font-extrabold text-blue-900 mb-4">Pare de Esperar. Comece Medicina Agora.</h1>
+        <p className="text-xl max-w-3xl mx-auto text-gray-700">Entre direto em Medicina no Paraguai, sem vestibular, com mensalidade acessível, carga horária completa e apoio para o Revalida.</p>
       </header>
 
-      <section className="py-10 px-6 bg-white">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          <img src="https://images.pexels.com/photos/8460158/pexels-photo-8460158.jpeg" className="rounded-xl shadow" alt="Laboratório 1" />
-          <img src="https://images.pexels.com/photos/4266948/pexels-photo-4266948.jpeg" className="rounded-xl shadow" alt="Laboratório 2" />
-          <img src="https://images.pexels.com/photos/5327922/pexels-photo-5327922.jpeg" className="rounded-xl shadow" alt="Sala de Aula" />
-        </div>
-      </section>
-
-      <section className="py-16 px-6">
-        <h2 className="text-3xl font-bold text-center mb-10">Por que estudar no Paraguai?</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {beneficios.map((b, i) => (
-            <div key={i} className="bg-blue-50 rounded-xl p-6 shadow hover:shadow-md transition">
-              <div className="text-4xl mb-4">{b.icone}</div>
-              <h3 className="font-bold text-xl mb-2">{b.titulo}</h3>
-              <p>{b.descricao}</p>
+      {/* I - Interesse */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+          {[
+            ['✅', 'Sem Vestibular', 'Ingresso direto, sem ENEM e sem cursinhos.'],
+            ['💰', 'Economia Real', 'Até R$ 550.000 a menos comparado a faculdades privadas no Brasil.'],
+            ['🩺', 'Internato Garantido', 'Prática clínica desde os anos iniciais com supervisão médica.'],
+            ['🌍', 'Diploma Internacional', 'Reconhecimento em diversos países + Revalida no Brasil.'],
+            ['⏱️', 'Sem perda de tempo', 'Enquanto no Brasil tentam vestibular, você já está atendendo.'],
+            ['📚', 'Conteúdo Completo', 'Carga horária e estrutura compatível com o Brasil.']
+          ].map(([icon, title, desc], i) => (
+            <div key={i} className="bg-blue-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+              <div className="text-4xl mb-3">{icon}</div>
+              <h3 className="font-bold text-xl mb-2">{title}</h3>
+              <p>{desc}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="py-16 px-6 bg-gray-50">
-        <h2 className="text-3xl font-bold text-center mb-10">Comparativo Brasil x Paraguai</h2>
+      {/* D - Desejo */}
+      <section className="bg-gray-50 py-16 px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-blue-900">Mais de 5.000 alunos já começaram essa jornada</h2>
+          <p className="text-gray-700 text-lg max-w-2xl mx-auto">Veja o que dizem estudantes brasileiros que decidiram parar de esperar pelo ENEM e já estão estudando Medicina no Paraguai.</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {[
+            ["Ana Luiza", "Ribeirão Preto (SP)", "Depois de 3 anos de cursinho, entrei direto. Hoje estou no 5º semestre com prática clínica real."],
+            ["Carlos Henrique", "Recife (PE)", "Paguei menos em 1 ano do que pagaria em 3 meses no Brasil. E estou aprendendo mais."],
+            ["Mariana Oliveira", "Belo Horizonte (MG)", "Eu duvidei, mas hoje recomendo pra todo mundo. Estrutura e professores excelentes."],
+            ["Lucas Nascimento", "Porto Alegre (RS)", "Meus colegas no Brasil ainda estão tentando vestibular. Eu já atendo em hospital."],
+            ["Camila Duarte", "São Luís (MA)", "A carga horária é completa, e o suporte para o Revalida é sério. Me sinto preparada."],
+            ["Martín Gómez", "Corrientes (AR)", "Estudo com brasileiros, paraguaios e argentinos. A UCP é realmente internacional."]
+          ].map(([nome, local, texto], i) => (
+            <div key={i} className="bg-white p-6 border rounded-xl shadow text-center">
+              <p className="italic text-gray-700 mb-3">“{texto}”</p>
+              <div className="font-semibold text-blue-800">{nome}</div>
+              <div className="text-sm text-gray-600">{local}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Comparação visual */}
+      <section className="py-16 px-6 bg-white">
+        <h2 className="text-3xl font-bold text-center mb-10 text-blue-900">Brasil vs Paraguai</h2>
         <div className="overflow-x-auto">
           <table className="w-full max-w-5xl mx-auto border border-gray-300 text-sm md:text-base">
             <thead>
-              <tr className="bg-blue-100">
-                <th className="py-3 px-4 text-left">Item</th>
-                <th className="py-3 px-4 text-left">Brasil (Privada)</th>
-                <th className="py-3 px-4 text-left">Paraguai (UCP)</th>
+              <tr className="bg-blue-100 text-left">
+                <th className="py-3 px-4">Item</th>
+                <th className="py-3 px-4">Brasil (Privada)</th>
+                <th className="py-3 px-4">Paraguai (UCP)</th>
               </tr>
             </thead>
             <tbody>
-              <tr className="border-t">
-                <td className="py-2 px-4">Mensalidade</td>
-                <td className="py-2 px-4">R$ 9.000</td>
-                <td className="py-2 px-4">R$ 1.500</td>
-              </tr>
-              <tr className="border-t">
-                <td className="py-2 px-4">Cursinho (3 anos)</td>
-                <td className="py-2 px-4">R$ 60.000</td>
-                <td className="py-2 px-4">R$ 0</td>
-              </tr>
-              <tr className="border-t">
-                <td className="py-2 px-4">Total 6 anos + custos</td>
-                <td className="py-2 px-4 font-bold text-red-600">R$ 800.000+</td>
-                <td className="py-2 px-4 font-bold text-green-700">R$ 250.000 aprox.</td>
-              </tr>
-              <tr className="border-t">
-                <td className="py-2 px-4">Diploma aceito no Brasil?</td>
-                <td className="py-2 px-4">Sim</td>
-                <td className="py-2 px-4">Sim (via Revalida)</td>
-              </tr>
+              {[
+                ['Mensalidade', 'R$ 9.000', 'R$ 1.500'],
+                ['Cursinho (3 anos)', 'R$ 60.000', 'R$ 0'],
+                ['Total 6 anos + custos', 'R$ 800.000+', 'R$ 250.000 aprox.'],
+                ['Diploma aceito no Brasil?', 'Sim', 'Sim (com Revalida)'],
+                ['Carga horária médica?', 'Sim', 'Sim (equivalente)']
+              ].map(([item, br, py], i) => (
+                <tr key={i} className="border-t">
+                  <td className="py-2 px-4 font-medium">{item}</td>
+                  <td className="py-2 px-4 text-red-600">{br}</td>
+                  <td className="py-2 px-4 text-green-700">{py}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
       </section>
 
-      <section className="py-16 px-6">
-        <h2 className="text-3xl font-bold text-center mb-10">Depoimentos Reais</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {depoimentos.map((d, i) => (
-            <div key={i} className="bg-white rounded-xl shadow p-6 border border-gray-200">
-              <img src={d.foto} alt={d.nome} className="w-16 h-16 rounded-full object-cover mb-4 mx-auto border-2 border-blue-500" />
-              <p className="italic text-gray-700 mb-4">“{d.texto}”</p>
-              <div className="text-sm font-semibold text-center">{d.nome} <br /><span className="text-blue-600">{d.local}</span></div>
-            </div>
-          ))}
-        </div>
+      {/* A - Ação */}
+      <section className="py-16 px-6 bg-blue-100 text-center">
+        <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4">Garanta sua vaga com prioridade</h2>
+        <p className="text-lg text-gray-800 mb-4">
+    Preencha o formulário ou fale diretamente com um consultor via WhatsApp. Vagas limitadas por turma.
+  </p>
+  <p className="text-md text-gray-700 mb-6 font-medium">
+    📌 Nossa equipe te acompanha desde a matrícula até o primeiro dia de aula — onde você estiver no Brasil.
+  </p>
+        <a href="https://wa.me/5599999999999" target="_blank" className="inline-block bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition">📲 Falar agora pelo WhatsApp</a>
       </section>
 
-      <section className="py-16 px-6 bg-blue-100 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4">Pré-Matrícula: Comece Agora</h2>
-        <p className="text-lg mb-6">Preencha os dados abaixo para receber as instruções de matrícula diretamente no seu WhatsApp.</p>
-        <form className="max-w-xl mx-auto bg-white rounded-xl shadow p-6 space-y-4">
+      {/* Formulário */}
+      <section className="py-16 px-6 bg-white text-center">
+        <h2 className="text-2xl font-bold mb-4">Pré-Matrícula</h2>
+        <p className="text-md mb-6">Receba orientações para matrícula, suporte para Revalida e acompanhe as próximas turmas.</p>
+        <form className="max-w-xl mx-auto text-left bg-gray-50 p-6 rounded-xl shadow space-y-4">
           <input type="text" placeholder="Nome completo" className="w-full border px-4 py-2 rounded" required />
           <input type="tel" placeholder="WhatsApp com DDD" className="w-full border px-4 py-2 rounded" required />
           <input type="email" placeholder="E-mail" className="w-full border px-4 py-2 rounded" required />
@@ -146,11 +114,11 @@ const App = () => {
             <option>Agosto</option>
           </select>
           <textarea placeholder="Observações ou dúvidas" className="w-full border px-4 py-2 rounded"></textarea>
-          <button type="submit" className="bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition">
+          <button type="submit" className="bg-blue-800 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-900 transition">
             Enviar minha inscrição
           </button>
         </form>
-        <p className="text-sm text-gray-700 mt-4">*Todos os dados são confidenciais e usados apenas para atendimento da matrícula.</p>
+        <p className="text-sm text-gray-700 mt-4">*Seus dados são usados apenas para atendimento da matrícula.</p>
       </section>
 
       <footer className="py-8 text-center text-gray-500 text-sm">
