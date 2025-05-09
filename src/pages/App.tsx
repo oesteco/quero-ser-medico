@@ -68,8 +68,6 @@ const App = () => {
     }
   ];
   
-  ];
-
   return (
     <div className="bg-white text-gray-800">
       {/* Hero com imagem e emoção */}
