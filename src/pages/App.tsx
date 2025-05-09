@@ -166,7 +166,7 @@ const App = () => {
        </section>
       {/* CTA forte */}
       <section className="py-16 px-6 bg-blue-100 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4">Você não estará sozinho nessa jornada</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4">Comece agora com apoio total da nossa equipe</h2>
         <p className="text-md text-gray-800 mb-4 max-w-xl mx-auto">
           📌 Nossa equipe te acompanha desde a matrícula até o primeiro dia de aula — onde você estiver no Brasil. Suporte, acolhimento e segurança total.
         </p>
