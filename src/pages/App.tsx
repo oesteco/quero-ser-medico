@@ -152,17 +152,17 @@ const App = () => {
           ))}
         </div>
       </section>
-                 <section className="py-16 px-6 bg-gray-100 text-center">
+  <section className="py-16 px-6 bg-gray-100 text-center">
   <h2 className="text-3xl font-bold text-blue-900 mb-4">Você nunca estará sozinho</h2>
   <p className="text-md text-gray-800 max-w-2xl mx-auto mb-6">
     Desde o momento da matrícula até o primeiro dia de aula, nossa equipe estará ao seu lado. 
     Com suporte dedicado, acompanhamento personalizado via WhatsApp e ajuda com documentos, alojamento e até a chegada na universidade.
   </p>
   <img 
-    src="https://images.pexels.com/photos/7551449/pexels-photo-7551449.jpeg" 
-    alt="Equipe auxiliando aluno" 
-    className="rounded-xl shadow-lg mx-auto max-w-xl"
-  />
+  src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg" 
+  alt="Estudantes felizes acolhidos" 
+  className="rounded-xl shadow-lg mx-auto max-w-xl"
+/>
        </section>
       {/* CTA forte */}
       <section className="py-16 px-6 bg-blue-100 text-center">
