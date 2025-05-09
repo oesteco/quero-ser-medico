@@ -28,10 +28,10 @@ const App = () => {
       icone: '📚'
     }
     {
-  titulo: 'Equipe que te acompanha do início ao fim',
-  descricao: 'Desde a matrícula até o primeiro dia de aula, com suporte no Brasil e no Paraguai.',
-  icone: '🤝'
-} 
+      titulo: 'Equipe que te acompanha do início ao fim',
+      descricao: 'Desde a matrícula até o primeiro dia de aula, com suporte no Brasil e no Paraguai.',
+      icone: '🤝'
+    } 
     ];
 
   const depoimentos = [
