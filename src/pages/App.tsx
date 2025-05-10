@@ -241,51 +241,62 @@ const labImagesSection = (
     </div>
   </div>
 </section>
-        {/* Perguntas Frequentes */}
+
+{/* Perguntas Frequentes */}
 <section className="py-16 px-6 bg-white">
   <h2 className="text-3xl font-bold text-center mb-10 text-blue-900">Perguntas Frequentes</h2>
   <div className="max-w-4xl mx-auto space-y-6">
     {[
       {
         pergunta: 'O diploma é válido no Brasil?',
-        resposta: 'Sim! Após concluir o curso, o aluno pode realizar o Revalida, exame oficial que valida diplomas estrangeiros. Com apoio e preparação adequada, muitos brasileiros conseguem o CRM com sucesso.'
+        resposta:
+          'Sim! Após concluir o curso, o aluno pode realizar o Revalida, exame oficial que valida diplomas estrangeiros. Com apoio e preparação adequada, muitos brasileiros conseguem o CRM com sucesso.',
       },
       {
         pergunta: 'Como é feito o Revalida?',
-        resposta: 'O Revalida é aplicado pelo INEP (Ministério da Educação) e ocorre em duas etapas: uma teórica objetiva/dissertativa e outra prática. Nossa equipe auxilia na preparação desde o primeiro ano.'
+        resposta:
+          'O Revalida é aplicado pelo INEP (Ministério da Educação) e ocorre em duas etapas: uma teórica objetiva/dissertativa e outra prática. Nossa equipe auxilia na preparação desde o primeiro ano.',
       },
       {
         pergunta: 'Preciso de visto para estudar no Paraguai?',
-        resposta: 'Não. Brasileiros podem estudar no Paraguai apenas com RG e CPF válidos. A documentação de estudante é feita com nosso apoio após a matrícula.'
+        resposta:
+          'Não. Brasileiros podem estudar no Paraguai apenas com RG e CPF válidos. A documentação de estudante é feita com nosso apoio após a matrícula.',
       },
       {
         pergunta: 'É seguro viver no Paraguai?',
-        resposta: 'Sim. As cidades universitárias possuem custo de vida acessível, boa infraestrutura e comunidades estudantis brasileiras ativas, com total suporte local.'
+        resposta:
+          'Sim. As cidades universitárias possuem custo de vida acessível, boa infraestrutura e comunidades estudantis brasileiras ativas, com total suporte local.',
       },
       {
         pergunta: 'Posso trabalhar durante os estudos?',
-        resposta: 'Você poderá participar de estágios e programas internos de prática supervisionada, principalmente nos anos avançados. Trabalhos formais dependem da legislação local.'
+        resposta:
+          'Você poderá participar de estágios e programas internos de prática supervisionada, principalmente nos anos avançados. Trabalhos formais dependem da legislação local.',
       },
       {
         pergunta: 'As aulas são em português?',
-        resposta: 'Sim. As universidades parceiras possuem aulas em português, além de material adaptado para brasileiros, garantindo aprendizado fluido.'
+        resposta:
+          'Sim. As universidades parceiras possuem aulas em português, além de material adaptado para brasileiros, garantindo aprendizado fluido.',
       },
       {
         pergunta: 'A formação é aceita em outros países?',
-        resposta: 'Sim. O diploma pode ser validado também em países como Argentina, Bolívia, Chile e, com processos específicos, até nos EUA e Europa.'
+        resposta:
+          'Sim. O diploma pode ser validado também em países como Argentina, Bolívia, Chile e, com processos específicos, até nos EUA e Europa.',
       },
       {
         pergunta: 'É possível parcelar a matrícula e os custos iniciais?',
-        resposta: 'Sim. Oferecemos planos acessíveis e facilitados para matrícula, além de opções de moradia com bom custo-benefício.'
+        resposta:
+          'Sim. Oferecemos planos acessíveis e facilitados para matrícula, além de opções de moradia com bom custo-benefício.',
       },
       {
         pergunta: 'Tenho suporte para moradia e adaptação?',
-        resposta: 'Sim! A equipe acompanha desde a chegada com orientações sobre moradia, transporte, saúde local e adaptação ao novo ambiente.'
+        resposta:
+          'Sim! A equipe acompanha desde a chegada com orientações sobre moradia, transporte, saúde local e adaptação ao novo ambiente.',
       },
       {
         pergunta: 'Como faço para começar?',
-        resposta: 'Basta preencher o formulário de pré-matrícula ou falar diretamente com um de nossos consultores via WhatsApp. Todo o processo é rápido e orientado.'
-      }
+        resposta:
+          'Basta preencher o formulário de pré-matrícula ou falar diretamente com um de nossos consultores via WhatsApp. Todo o processo é rápido e orientado.',
+      },
     ].map((item, index) => (
       <div key={index} className="bg-gray-50 p-5 rounded-xl shadow">
         <h3 className="font-semibold text-blue-800 text-lg mb-2">❓ {item.pergunta}</h3>
@@ -294,50 +305,55 @@ const labImagesSection = (
     ))}
   </div>
 </section>
-   
-      {/* CTA forte */}
-      <section className="py-16 px-6 bg-blue-100 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4">Comece agora com apoio total da nossa equipe</h2>
-        <p className="text-md text-gray-800 mb-4 max-w-xl mx-auto">
-          📌 Nossa equipe te acompanha desde a matrícula até o primeiro dia de aula — onde você estiver no Brasil. Suporte, acolhimento e segurança total.
-        </p>
-       <a 
-  href="https://wa.me/5567981432355" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  className="inline-block bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition"
->
-  📲 Falar agora com um consultor via WhatsApp
-</a>
-  </section>
- 
-      {/* Formulário final */}
-      <section className="py-16 px-6 bg-white text-center">
-        <h2 className="text-2xl font-bold mb-4">Pré-Matrícula Rápida</h2>
-        <p className="text-md mb-6">Preencha os dados e receba orientação completa agora mesmo.</p>
-        <form className="max-w-xl mx-auto bg-gray-50 rounded-xl shadow p-6 space-y-4 text-left">
-          <input type="text" placeholder="Nome completo" className="w-full border px-4 py-2 rounded" required />
-          <input type="tel" placeholder="WhatsApp com DDD" className="w-full border px-4 py-2 rounded" required />
-          <input type="email" placeholder="E-mail" className="w-full border px-4 py-2 rounded" required />
-          <input type="text" placeholder="Cidade / Estado" className="w-full border px-4 py-2 rounded" required />
-          <select className="w-full border px-4 py-2 rounded">
-            <option>Deseja começar em qual mês?</option>
-            <option>Janeiro</option>
-            <option>Março</option>
-            <option>Agosto</option>
-          </select>
-          <textarea placeholder="Observações ou dúvidas" className="w-full border px-4 py-2 rounded"></textarea>
-          <button type="submit" className="bg-blue-800 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-900 transition">
-            Enviar minha inscrição
-          </button>
-        </form>
-        <p className="text-sm text-gray-700 mt-4">*Seus dados são usados apenas para atendimento da matrícula.</p>
-      </section>
 
-      <footer className="py-8 text-center text-gray-500 text-sm">
-        © {new Date().getFullYear()} Quero Ser Médico. Todos os direitos reservados.
-            </footer>
-    </div>
+{/* CTA forte */}
+<section className="py-16 px-6 bg-blue-100 text-center">
+  <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4">Comece agora com apoio total da nossa equipe</h2>
+  <p className="text-md text-gray-800 mb-4 max-w-xl mx-auto">
+    📌 Nossa equipe te acompanha desde a matrícula até o primeiro dia de aula — onde você estiver no Brasil. Suporte, acolhimento e segurança total.
+  </p>
+  <a
+    href="https://wa.me/5567981432355"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition"
+  >
+    📲 Falar agora com um consultor via WhatsApp
+  </a>
+</section>
+
+{/* Formulário final */}
+<section className="py-16 px-6 bg-white text-center">
+  <h2 className="text-2xl font-bold mb-4">Pré-Matrícula Rápida</h2>
+  <p className="text-md mb-6">Preencha os dados e receba orientação completa agora mesmo.</p>
+  <form className="max-w-xl mx-auto bg-gray-50 rounded-xl shadow p-6 space-y-4 text-left">
+    <input type="text" placeholder="Nome completo" className="w-full border px-4 py-2 rounded" required />
+    <input type="tel" placeholder="WhatsApp com DDD" className="w-full border px-4 py-2 rounded" required />
+    <input type="email" placeholder="E-mail" className="w-full border px-4 py-2 rounded" required />
+    <input type="text" placeholder="Cidade / Estado" className="w-full border px-4 py-2 rounded" required />
+    <select className="w-full border px-4 py-2 rounded">
+      <option>Deseja começar em qual mês?</option>
+      <option>Janeiro</option>
+      <option>Março</option>
+      <option>Agosto</option>
+    </select>
+    <textarea placeholder="Observações ou dúvidas" className="w-full border px-4 py-2 rounded"></textarea>
+    <button
+      type="submit"
+      className="bg-blue-800 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-900 transition"
+    >
+      Enviar minha inscrição
+    </button>
+  </form>
+  <p className="text-sm text-gray-700 mt-4">*Seus dados são usados apenas para atendimento da matrícula.</p>
+</section>
+
+<footer className="py-8 text-center text-gray-500 text-sm">
+  © {new Date().getFullYear()} Quero Ser Médico. Todos os direitos reservados.
+</footer>
+    </div>  // ← Fecha o <div className="bg-white text-gray-800">
   );
 };
+
 export default App;
+
