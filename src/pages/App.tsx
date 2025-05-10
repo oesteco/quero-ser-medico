@@ -39,7 +39,7 @@ const App = () => {
     {
       nome: 'Ana Luiza',
       local: 'Ribeirão Preto (SP)',
-      texto: 'Tentei vestibular no Brasil por 3 anos sem sucesso. Com a equipe do 'Quero Ser Médico', em apenas 3 meses já estava matriculada e assistindo aulas. O suporte para documentação e moradia foi essencial.',
+      texto: 'Tentei vestibular no Brasil por 3 anos sem sucesso. Com a equipe do Quero Ser Médico, em apenas 3 meses já estava matriculada e assistindo aulas. O suporte para documentação e moradia foi essencial.',
       foto: 'https://i.pravatar.cc/150?img=3'
     },
     {
