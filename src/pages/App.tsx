@@ -92,7 +92,8 @@ const App = () => {
         </div>
       </section>
 {/* Bloco emocional: Você nunca estará sozinho */}
-<section className="py-16 px-4 sm:px-6 bg-gray-100 text-center">
+
+    <section className="py-16 px-4 sm:px-6 bg-gray-100 text-center">
   <h2 className="text-3xl font-bold text-blue-900 mb-6">Você nunca estará sozinho</h2>
   <p className="text-md text-gray-800 max-w-2xl mx-auto mb-8 px-2">
     Desde a matrícula até o primeiro dia de aula, nossa equipe estará ao seu lado. 
@@ -106,7 +107,7 @@ const App = () => {
     />
   </div>
 </section>
-    
+
        
       {/* Benefícios com ícones */}
       <section className="py-16 px-6">
