@@ -310,7 +310,7 @@ const labImagesSection = (
   className="inline-block bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition"
 >
   📲 Falar agora com um consultor via WhatsApp
-</a>>
+</a>
 
       {/* Formulário final */}
       <section className="py-16 px-6 bg-white text-center">
