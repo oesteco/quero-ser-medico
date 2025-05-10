@@ -91,21 +91,23 @@ const App = () => {
           <img src="https://images.pexels.com/photos/5327922/pexels-photo-5327922.jpeg" className="rounded-xl shadow" alt="Prática médica" />
         </div>
       </section>
-
-      {/* Bloco emocional: Você nunca estará sozinho */}
-      <section className="py-16 px-6 bg-gray-100 text-center">
-        <h2 className="text-3xl font-bold text-blue-900 mb-4">Você nunca estará sozinho</h2>
-        <p className="text-md text-gray-800 max-w-2xl mx-auto mb-6">
-          Desde a matrícula até o primeiro dia de aula, nossa equipe estará ao seu lado. 
-          Com suporte dedicado, acompanhamento personalizado via WhatsApp e ajuda com documentos, alojamento e até a chegada na universidade.
-        </p>
-        <img 
-          src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg" 
-          alt="Estudantes felizes acolhidos" 
-          className="rounded-xl shadow-lg mx-auto max-w-xl"
-        />
-      </section>
-        
+{/* Bloco emocional: Você nunca estará sozinho */}
+<section className="py-16 px-4 sm:px-6 bg-gray-100 text-center">
+  <h2 className="text-3xl font-bold text-blue-900 mb-6">Você nunca estará sozinho</h2>
+  <p className="text-md text-gray-800 max-w-2xl mx-auto mb-8 px-2">
+    Desde a matrícula até o primeiro dia de aula, nossa equipe estará ao seu lado. 
+    Com suporte dedicado, acompanhamento personalizado via WhatsApp e ajuda com documentos, viagem e adaptação.
+  </p>
+  <div className="flex justify-center">
+    <img 
+      src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg" 
+      alt="Estudantes felizes acolhidos" 
+      className="rounded-xl shadow-lg w-full max-w-md h-auto"
+    />
+  </div>
+</section>
+    
+       
       {/* Benefícios com ícones */}
       <section className="py-16 px-6">
         <h2 className="text-3xl font-bold text-center mb-10 text-blue-900">Por que brasileiros estão migrando para o Paraguai?</h2>
