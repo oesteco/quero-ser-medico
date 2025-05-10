@@ -45,7 +45,7 @@ const labImagesSection = (
         {/* Lab 1 */}
         <div>
           <img 
-            src="https://images.unsplash.com/photo-1581093458791-9acb5c798a1b?auto=format&fit=crop&w=600&q=80" 
+            src="https://images.unsplash.com/photo-1581093458791-9acb5c798a1b?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop" 
             className="rounded-xl shadow mb-4 w-full h-64 object-cover" 
             alt="Laboratório de Anatomia" 
           />
@@ -56,7 +56,7 @@ const labImagesSection = (
         {/* Lab 2 */}
         <div>
           <img 
-            src="https://images.unsplash.com/photo-1616578734656-aa8e614295bc?auto=format&fit=crop&w=600&q=80" 
+            src="https://images.unsplash.com/photo-1616578734656-aa8e614295bc?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop" 
             className="rounded-xl shadow mb-4 w-full h-64 object-cover" 
             alt="Laboratório de Microscopia" 
           />
@@ -67,7 +67,7 @@ const labImagesSection = (
         {/* Lab 3 */}
         <div>
           <img 
-            src="https://images.unsplash.com/photo-1581093588401-cddd12639ddf?auto=format&fit=crop&w=600&q=80" 
+            src="https://images.unsplash.com/photo-1581093588401-cddd12639ddf?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop" 
             className="rounded-xl shadow mb-4 w-full h-64 object-cover" 
             alt="Centro de Simulação" 
           />
@@ -123,7 +123,7 @@ const labImagesSection = (
   return (
     <div className="bg-white text-gray-800">
       {/* Hero com imagem e emoção */}
-      <header className="bg-violet-300 text-white py-16 px-6 text-center">
+      <header className="bg-violet-500 text-white py-16 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Pare de tentar! Comece a estudar Medicina agora.</h1>
         <p className="text-lg md:text-xl max-w-3xl mx-auto">Entre direto em Medicina no Paraguai, com apoio completo para o Revalida, mensalidade acessível e estrutura moderna.</p>
       </header>
@@ -131,9 +131,21 @@ const labImagesSection = (
      {/* Imagens motivacionais */}
 <section className="py-10 px-6 bg-white">
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-    <img src="https://images.pexels.com/photos/8460158/pexels-photo-8460158.jpeg" className="rounded-xl shadow" alt="Laboratório real" />
-    <img src="https://images.pexels.com/photos/4266948/pexels-photo-4266948.jpeg" className="rounded-xl shadow" alt="Sala com alunos" />
-    <img src="https://images.pexels.com/photos/5327922/pexels-photo-5327922.jpeg" className="rounded-xl shadow" alt="Prática médica" />
+    <img 
+      src="https://images.pexels.com/photos/8460158/pexels-photo-8460158.jpeg?auto=compress&cs=tinysrgb&w=800" 
+      alt="Laboratório real" 
+      className="rounded-xl shadow w-full h-64 object-cover"
+    />
+    <img 
+      src="https://images.pexels.com/photos/4266948/pexels-photo-4266948.jpeg?auto=compress&cs=tinysrgb&w=800" 
+      alt="Sala com alunos" 
+      className="rounded-xl shadow w-full h-64 object-cover"
+    />
+    <img 
+      src="https://images.pexels.com/photos/5327922/pexels-photo-5327922.jpeg?auto=compress&cs=tinysrgb&w=800" 
+      alt="Prática médica" 
+      className="rounded-xl shadow w-full h-64 object-cover"
+    />
   </div>
 </section>
 
@@ -235,10 +247,14 @@ const labImagesSection = (
         <p className="text-md text-gray-800 mb-4 max-w-xl mx-auto">
           📌 Nossa equipe te acompanha desde a matrícula até o primeiro dia de aula — onde você estiver no Brasil. Suporte, acolhimento e segurança total.
         </p>
-        <a href="https://wa.me/5567981432355" target="_blank" className="inline-block bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition">
-          📲 Falar agora com um consultor via WhatsApp
-        </a>
-      </section>
+       <a 
+  href="https://wa.me/5567981432355" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="inline-block bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition"
+>
+  📲 Falar agora com um consultor via WhatsApp
+</a>>
 
       {/* Formulário final */}
       <section className="py-16 px-6 bg-white text-center">
