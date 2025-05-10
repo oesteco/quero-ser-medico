@@ -294,9 +294,7 @@ const labImagesSection = (
     ))}
   </div>
 </section>
-
-      
-      
+   
       {/* CTA forte */}
       <section className="py-16 px-6 bg-blue-100 text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4">Comece agora com apoio total da nossa equipe</h2>
@@ -311,7 +309,8 @@ const labImagesSection = (
 >
   📲 Falar agora com um consultor via WhatsApp
 </a>
-
+  </section>
+ 
       {/* Formulário final */}
       <section className="py-16 px-6 bg-white text-center">
         <h2 className="text-2xl font-bold mb-4">Pré-Matrícula Rápida</h2>
