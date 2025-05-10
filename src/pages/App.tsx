@@ -44,8 +44,11 @@ const App = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Lab 1 */}
         <div>
-          <img src="https://images.unsplash.com/photo-1581093458791-9acb5c798a1b?auto=format&fit=crop&w=600&q=80" ... />
-" className="rounded-xl shadow mb-4 w-full h-64 object-cover" alt="Laboratório de Anatomia" />
+          <img 
+  src="https://images.unsplash.com/photo-1581093458791-9acb5c798a1b?auto=format&fit=crop&w=600&q=80" 
+  className="rounded-xl shadow mb-4 w-full h-64 object-cover" 
+  alt="Laboratório de Anatomia" 
+/>
           <h3 className="text-xl font-semibold mb-1">Laboratório de Anatomia</h3>
           <p className="text-gray-600">Estudos práticos com equipamentos modernos para dissecação e análise.</p>
         </div>
