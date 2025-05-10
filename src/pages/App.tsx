@@ -33,7 +33,7 @@ const App = () => {
   icone: '🧭'
 }
     ];
- const labImagesSection = (
+const labImagesSection = (
   <section className="py-16 px-4 md:px-0 bg-gray-50">
     <div className="container mx-auto">
       <h2 className="text-3xl font-bold text-blue-900 text-center mb-4">Nossa Estrutura Laboratorial</h2>
@@ -45,26 +45,32 @@ const App = () => {
         {/* Lab 1 */}
         <div>
           <img 
-  src="https://images.unsplash.com/photo-1581093458791-9acb5c798a1b?auto=format&fit=crop&w=600&q=80" 
-  className="rounded-xl shadow mb-4 w-full h-64 object-cover" 
-  alt="Laboratório de Anatomia" 
-/>
+            src="https://images.unsplash.com/photo-1581093458791-9acb5c798a1b?auto=format&fit=crop&w=600&q=80" 
+            className="rounded-xl shadow mb-4 w-full h-64 object-cover" 
+            alt="Laboratório de Anatomia" 
+          />
           <h3 className="text-xl font-semibold mb-1">Laboratório de Anatomia</h3>
           <p className="text-gray-600">Estudos práticos com equipamentos modernos para dissecação e análise.</p>
         </div>
 
         {/* Lab 2 */}
         <div>
-          <img src="https://images.unsplash.com/photo-1581093458791-9acb5c798a1b?auto=format&fit=crop&w=600&q=80" ... />
-" className="rounded-xl shadow mb-4 w-full h-64 object-cover" alt="Laboratório de Microscopia" />
+          <img 
+            src="https://images.unsplash.com/photo-1616578734656-aa8e614295bc?auto=format&fit=crop&w=600&q=80" 
+            className="rounded-xl shadow mb-4 w-full h-64 object-cover" 
+            alt="Laboratório de Microscopia" 
+          />
           <h3 className="text-xl font-semibold mb-1">Laboratório de Microscopia</h3>
           <p className="text-gray-600">Equipado com microscópios de alta precisão para análises celulares.</p>
         </div>
 
         {/* Lab 3 */}
         <div>
-          <img src="https://images.unsplash.com/photo-1581093458791-9acb5c798a1b?auto=format&fit=crop&w=600&q=80" ... />
-" className="rounded-xl shadow mb-4 w-full h-64 object-cover" alt="Centro de Simulação" />
+          <img 
+            src="https://images.unsplash.com/photo-1581093588401-cddd12639ddf?auto=format&fit=crop&w=600&q=80" 
+            className="rounded-xl shadow mb-4 w-full h-64 object-cover" 
+            alt="Centro de Simulação" 
+          />
           <h3 className="text-xl font-semibold mb-1">Centro de Simulação</h3>
           <p className="text-gray-600">Simuladores de alta fidelidade para prática de atendimentos médicos.</p>
         </div>
