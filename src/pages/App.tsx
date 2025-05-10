@@ -33,7 +33,45 @@ const App = () => {
   icone: '🧭'
 }
     ];
+ {/* Lab Images Section */}
+      <section className="py-16 px-4 md:px-0 bg-gray-50">
+        <div className="container mx-auto">
+          <h2 className="section-title text-center">Nossa Estrutura Laboratorial</h2>
+          <p className="section-subtitle text-center">
+            Contamos com laboratórios modernos e equipados com as mais recentes tecnologias para sua formação médica.
+          </p>
 
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+            {/* Lab Image 1 */}
+            <div className="card overflow-hidden">
+              <div className="h-64 bg-gray-300 mb-4 overflow-hidden">
+                <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1581093458791-9acb5c798a1b')] bg-cover bg-center"></div>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Laboratório de Anatomia</h3>
+              <p className="text-gray-600">Estudos práticos com equipamentos de última geração para dissecação e análise.</p>
+            </div>
+
+            {/* Lab Image 2 */}
+            <div className="card overflow-hidden">
+              <div className="h-64 bg-gray-300 mb-4 overflow-hidden">
+                <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1616578734656-aa8e614295bc')] bg-cover bg-center"></div>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Laboratório de Microscopia</h3>
+              <p className="text-gray-600">Equipado com microscópios de alta precisão para análises celulares detalhadas.</p>
+            </div>
+
+            {/* Lab Image 3 */}
+            <div className="card overflow-hidden">
+              <div className="h-64 bg-gray-300 mb-4 overflow-hidden">
+                <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1581093588401-cddd12639ddf')] bg-cover bg-center"></div>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Centro de Simulação</h3>
+              <p className="text-gray-600">Simuladores avançados para prática de procedimentos médicos em ambiente seguro.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
   const depoimentos = [
     
     {
@@ -79,7 +117,7 @@ const App = () => {
     <div className="bg-white text-gray-800">
       {/* Hero com imagem e emoção */}
       <header className="bg-blue-900 text-white py-16 px-6 text-center">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Pare de tentar. Comece a estudar Medicina agora.</h1>
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Pare de tentar! Comece a estudar Medicina agora.</h1>
         <p className="text-lg md:text-xl max-w-3xl mx-auto">Entre direto em Medicina no Paraguai, com apoio completo para o Revalida, mensalidade acessível e estrutura moderna.</p>
       </header>
 
