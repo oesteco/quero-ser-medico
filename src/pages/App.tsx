@@ -341,6 +341,5 @@ const labImagesSection = (
     </div>
   );
 };
-      </div>
 
 export default App;
