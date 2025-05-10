@@ -51,7 +51,7 @@ const App = () => {
     {
       nome: 'Fernanda Oliveira',
       local: 'Belo Horizonte (MG)',
-      texto: 'O Revalida parecia um bicho de sete cabeças. Com a preparação aqui, já me sinto pronta!',
+      texto: 'O Revalida parecia um bicho de sete cabeças. Com a preparação aqui, já me sinto pronto!',
       foto: 'https://i.pravatar.cc/150?img=8'
     },
     {
