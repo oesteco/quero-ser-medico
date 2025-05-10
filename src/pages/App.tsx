@@ -160,18 +160,26 @@ const App = () => {
           ))}
         </div>
       </section>
-  <section className="py-16 px-4 sm:px-6 bg-gray-100 text-center">
-  <h2 className="text-3xl font-bold text-blue-900 mb-4">Você nunca estará sozinho</h2>
-  <p className="text-md text-gray-800 max-w-2xl mx-auto mb-6">
-    Desde o momento da matrícula até o primeiro dia de aula, nossa equipe estará ao seu lado. 
-    Com suporte dedicado, acompanhamento personalizado via WhatsApp e ajuda com documentos, alojamento e até a chegada na universidade.
-  </p>
-  <img 
-  src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg" 
-  alt="Estudantes felizes acolhidos" 
-  className="rounded-xl shadow-lg mx-auto max-w-xl"
-/>
-       </section>
+  <section className="py-16 px-4 sm:px-6 bg-gray-100">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div className="text-center md:text-left">
+      <h2 className="text-3xl font-bold text-blue-900 mb-4">Você nunca estará sozinho</h2>
+      <p className="text-md text-gray-800 mb-4">
+        Desde a matrícula até o primeiro dia de aula, nossa equipe estará ao seu lado.
+      </p>
+      <p className="text-md text-gray-800">
+        Suporte completo com documentação, adaptação, viagem e acompanhamento por WhatsApp — onde você estiver no Brasil.
+      </p>
+    </div>
+    <div className="flex justify-center">
+      <img 
+        src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg" 
+        alt="Estudantes felizes acolhidos" 
+        className="rounded-xl shadow-lg w-full max-w-md h-auto"
+      />
+    </div>
+  </div>
+</section>
       {/* CTA forte */}
       <section className="py-16 px-6 bg-blue-100 text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4">Comece agora com apoio total da nossa equipe</h2>
