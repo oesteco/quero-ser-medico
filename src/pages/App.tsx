@@ -33,45 +33,43 @@ const App = () => {
   icone: '🧭'
 }
     ];
- {/* Lab Images Section */}
-      <section className="py-16 px-4 md:px-0 bg-gray-50">
-        <div className="container mx-auto">
-          <h2 className="section-title text-center">Nossa Estrutura Laboratorial</h2>
-          <p className="section-subtitle text-center">
-            Contamos com laboratórios modernos e equipados com as mais recentes tecnologias para sua formação médica.
-          </p>
+ const labImagesSection = (
+  <section className="py-16 px-4 md:px-0 bg-gray-50">
+    <div className="container mx-auto">
+      <h2 className="text-3xl font-bold text-blue-900 text-center mb-4">Nossa Estrutura Laboratorial</h2>
+      <p className="text-md text-gray-700 text-center max-w-2xl mx-auto mb-8">
+        Contamos com laboratórios modernos e equipados com as mais recentes tecnologias para sua formação médica.
+      </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-            {/* Lab Image 1 */}
-            <div className="card overflow-hidden">
-              <div className="h-64 bg-gray-300 mb-4 overflow-hidden">
-                <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1581093458791-9acb5c798a1b')] bg-cover bg-center"></div>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Laboratório de Anatomia</h3>
-              <p className="text-gray-600">Estudos práticos com equipamentos de última geração para dissecação e análise.</p>
-            </div>
-
-            {/* Lab Image 2 */}
-            <div className="card overflow-hidden">
-              <div className="h-64 bg-gray-300 mb-4 overflow-hidden">
-                <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1616578734656-aa8e614295bc')] bg-cover bg-center"></div>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Laboratório de Microscopia</h3>
-              <p className="text-gray-600">Equipado com microscópios de alta precisão para análises celulares detalhadas.</p>
-            </div>
-
-            {/* Lab Image 3 */}
-            <div className="card overflow-hidden">
-              <div className="h-64 bg-gray-300 mb-4 overflow-hidden">
-                <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1581093588401-cddd12639ddf')] bg-cover bg-center"></div>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Centro de Simulação</h3>
-              <p className="text-gray-600">Simuladores avançados para prática de procedimentos médicos em ambiente seguro.</p>
-            </div>
-          </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Lab 1 */}
+        <div>
+          <img src="https://images.unsplash.com/photo-1581093458791-9acb5c798a1b?auto=format&fit=crop&w=600&q=80" ... />
+" className="rounded-xl shadow mb-4 w-full h-64 object-cover" alt="Laboratório de Anatomia" />
+          <h3 className="text-xl font-semibold mb-1">Laboratório de Anatomia</h3>
+          <p className="text-gray-600">Estudos práticos com equipamentos modernos para dissecação e análise.</p>
         </div>
-      </section>
-  
+
+        {/* Lab 2 */}
+        <div>
+          <img src="https://images.unsplash.com/photo-1581093458791-9acb5c798a1b?auto=format&fit=crop&w=600&q=80" ... />
+" className="rounded-xl shadow mb-4 w-full h-64 object-cover" alt="Laboratório de Microscopia" />
+          <h3 className="text-xl font-semibold mb-1">Laboratório de Microscopia</h3>
+          <p className="text-gray-600">Equipado com microscópios de alta precisão para análises celulares.</p>
+        </div>
+
+        {/* Lab 3 */}
+        <div>
+          <img src="https://images.unsplash.com/photo-1581093458791-9acb5c798a1b?auto=format&fit=crop&w=600&q=80" ... />
+" className="rounded-xl shadow mb-4 w-full h-64 object-cover" alt="Centro de Simulação" />
+          <h3 className="text-xl font-semibold mb-1">Centro de Simulação</h3>
+          <p className="text-gray-600">Simuladores de alta fidelidade para prática de atendimentos médicos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+);
+ 
   const depoimentos = [
     
     {
@@ -116,19 +114,23 @@ const App = () => {
   return (
     <div className="bg-white text-gray-800">
       {/* Hero com imagem e emoção */}
-      <header className="bg-purple-900 text-white py-16 px-6 text-center">
+      <header className="bg-purple-300 text-white py-16 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Pare de tentar! Comece a estudar Medicina agora.</h1>
         <p className="text-lg md:text-xl max-w-3xl mx-auto">Entre direto em Medicina no Paraguai, com apoio completo para o Revalida, mensalidade acessível e estrutura moderna.</p>
       </header>
 
      {/* Imagens motivacionais */}
-      <section className="py-10 px-6 bg-white">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          <img src="https://images.pexels.com/photos/8460158/pexels-photo-8460158.jpeg" className="rounded-xl shadow" alt="Laboratório real" />
-          <img src="https://images.pexels.com/photos/4266948/pexels-photo-4266948.jpeg" className="rounded-xl shadow" alt="Sala com alunos" />
-          <img src="https://images.pexels.com/photos/5327922/pexels-photo-5327922.jpeg" className="rounded-xl shadow" alt="Prática médica" />
-        </div>
-      </section>
+<section className="py-10 px-6 bg-white">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+    <img src="https://images.pexels.com/photos/8460158/pexels-photo-8460158.jpeg" className="rounded-xl shadow" alt="Laboratório real" />
+    <img src="https://images.pexels.com/photos/4266948/pexels-photo-4266948.jpeg" className="rounded-xl shadow" alt="Sala com alunos" />
+    <img src="https://images.pexels.com/photos/5327922/pexels-photo-5327922.jpeg" className="rounded-xl shadow" alt="Prática médica" />
+  </div>
+</section>
+
+{/* Estrutura Laboratorial */}
+{labImagesSection}
+
 {/* Bloco emocional: Você nunca estará sozinho */}
        
       {/* Benefícios com ícones */}
