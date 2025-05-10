@@ -37,19 +37,19 @@ const App = () => {
   const depoimentos = [
     
     {
-      nome: 'Ana Luiza',
+      nome: 'Carlos Henrique',
       local: 'Ribeirão Preto (SP)',
       texto: 'Tentei vestibular no Brasil por 3 anos sem sucesso. Com a equipe do Quero Ser Médico, em apenas 3 meses já estava matriculado e assistindo aulas. O suporte para documentação e moradia foi essencial.',
       foto: 'https://i.pravatar.cc/150?img=3'
     },
     {
-      nome: 'Carlos Henrique',
+      nome: 'Ana Luiza',
       local: 'Recife (PE)',
       texto: 'Economizei mais de R$ 500 mil em mensalidades e cursinhos. E estou aprendendo MUITO mais.',
       foto: 'https://i.pravatar.cc/150?img=5'
     },
     {
-      nome: 'Fernanda Oliveira',
+      nome: 'Fernando Oliveira',
       local: 'Belo Horizonte (MG)',
       texto: 'O Revalida parecia um bicho de sete cabeças. Com a preparação aqui, já me sinto pronto!',
       foto: 'https://i.pravatar.cc/150?img=8'
@@ -61,7 +61,7 @@ const App = () => {
       foto: 'https://i.pravatar.cc/150?img=11'
     },
     {
-      nome: 'Camila Duarte',
+      nome: 'Camilo Duarte',
       local: 'São Luís (MA)',
       texto: 'Achei que ia ser complicado estudar fora, mas aqui me sinto em casa. A estrutura é excelente.',
       foto: 'https://i.pravatar.cc/150?img=14'
