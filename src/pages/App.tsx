@@ -337,9 +337,8 @@ const labImagesSection = (
 
       <footer className="py-8 text-center text-gray-500 text-sm">
         © {new Date().getFullYear()} Quero Ser Médico. Todos os direitos reservados.
-      </footer>
+            </footer>
     </div>
   );
 };
-
 export default App;
