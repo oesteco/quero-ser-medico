@@ -116,7 +116,7 @@ const App = () => {
   return (
     <div className="bg-white text-gray-800">
       {/* Hero com imagem e emoção */}
-      <header className="bg-lightpurple-900 text-white py-16 px-6 text-center">
+      <header className="bg-purple-900 text-white py-16 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Pare de tentar! Comece a estudar Medicina agora.</h1>
         <p className="text-lg md:text-xl max-w-3xl mx-auto">Entre direto em Medicina no Paraguai, com apoio completo para o Revalida, mensalidade acessível e estrutura moderna.</p>
       </header>
