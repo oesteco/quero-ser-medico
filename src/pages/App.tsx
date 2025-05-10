@@ -13,25 +13,25 @@ const App = () => {
       icone: '💰'
     },
     {
-      titulo: 'Internato Garantido',
-      descricao: 'Prática clínica desde os anos iniciais, com estrutura hospitalar completa.',
-      icone: '🩺'
-    },
-    {
-      titulo: 'Alta Aprovação no Revalida',
-      descricao: 'Com apoio certo, 7 em cada 10 alunos retornam com CRM em mãos.',
-      icone: '📈'
-    },
-    {
-      titulo: 'Carga Horária Equivalente',
-      descricao: 'Você estuda com a mesma base exigida no Brasil, sem burocracia.',
-      icone: '📚'
-    },
-     {
-    titulo: 'Acompanhamento Completo',
-    descricao: 'Você terá suporte da matrícula até o primeiro dia de aula — incluindo ajuda com documentação, viagem e adaptação.',
-    icone: '🧭'
-    }
+  titulo: 'Internato Garantido',
+  descricao: 'Prática clínica desde os anos iniciais, com estrutura hospitalar completa.',
+  icone: '🩺'
+},
+{
+  titulo: 'Alta Aprovação no Revalida',
+  descricao: 'Com apoio certo, 7 em cada 10 alunos retornam com CRM em mãos.',
+  icone: '📈'
+},
+{
+  titulo: 'Carga Horária Equivalente',
+  descricao: 'Você estuda com a mesma base exigida no Brasil, sem burocracia.',
+  icone: '📚'
+},
+{
+  titulo: 'Acompanhamento Completo',
+  descricao: 'Você terá suporte da matrícula até o primeiro dia de aula — incluindo ajuda com documentação, viagem e adaptação.',
+  icone: '🧭'
+}
     ];
 
   const depoimentos = [
