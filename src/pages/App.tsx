@@ -186,7 +186,7 @@ const App = () => {
         <p className="text-md text-gray-800 mb-4 max-w-xl mx-auto">
           📌 Nossa equipe te acompanha desde a matrícula até o primeiro dia de aula — onde você estiver no Brasil. Suporte, acolhimento e segurança total.
         </p>
-        <a href="https://wa.me/5599999999999" target="_blank" className="inline-block bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition">
+        <a href="https://wa.me/5567981432355" target="_blank" className="inline-block bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition">
           📲 Falar agora com um consultor via WhatsApp
         </a>
       </section>
